@@ -9,6 +9,10 @@ def gc_content(seq):
     return (seq.count("G") + seq.count("C")) / len(seq)
 assert at_content("ATCG") == 0.5
 
+def n_content(seq):
+    return (seq.count("N") / len(seq))
+assert n_content("NNCG") == 0.5
+
 # sequence complexity
 # percentage of bases that are different from their next base
 def sequence_complexity(seq):
